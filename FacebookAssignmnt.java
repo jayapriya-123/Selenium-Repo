@@ -24,8 +24,8 @@ public class FacebookAssignmnt {
 		 driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Vighna",Keys.TAB);
 		 driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("Loshi",Keys.TAB);
 		 driver.findElement(By.xpath("//input[@aria-label='Mobile number or email address']")).sendKeys("Pri@gmail.com",Keys.TAB);
-		 driver.findElement(By.xpath("//input[@aria-label='New password']")).sendKeys("priya",Keys.TAB);
-		 driver.findElement(By.xpath("//input[@aria-label='Re-enter email address']")).sendKeys("priya",Keys.TAB);
+		driver.findElement(By.xpath("//input[@aria-label='Re-enter email address']")).sendKeys("pri@gmail.com",Keys.TAB);
+		 driver.findElement(By.xpath("//input[@aria-label='New password']")).sendKeys("priya11",Keys.TAB);
 		 WebElement elementday = driver.findElement(By.id("day"));
 			Select dd=new Select(elementday);
 			dd.selectByIndex(11);
@@ -34,7 +34,7 @@ public class FacebookAssignmnt {
 				dd1.selectByVisibleText("Apr");
 				WebElement elementyear = driver.findElement(By.id("year"));
 				Select dd2=new Select(elementyear);
-				dd2.selectByIndex(3);
+				dd2.selectByIndex(22);
 				driver.findElement(By.xpath("//label[text()='Female']")).click();			
 	
 }
